@@ -4,6 +4,7 @@ import MobileDrawer from "./pages/MobileDrawer";
 import Gallery from "./pages/Profile";
 import TeaSet from "./pages/TeaSet";
 import Props from "./pages/children/Props";
+import GalleryMore from "./pages/interactivity/Gallery";
 import List from "./pages/lists/List";
 import { ChakraProvider } from "@chakra-ui/react";
 
@@ -12,7 +13,7 @@ function App() {
     <div className="App">
       <p>This is react learning</p>
 
-      <PackingList />
+      {/* <PackingList />
       <hr />
       <Gallery />
       <hr />
@@ -20,7 +21,8 @@ function App() {
       <hr />
       <List />
       <MobileDrawer />
-      <Props />
+      <Props /> */}
+      <GalleryMore />
     </div>
   );
 }
