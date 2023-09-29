@@ -18,6 +18,7 @@ function Todos() {
           title={concepts[1].title}
           description={concepts[1].description}
         />
+
         <Concept
           image={concepts[2].image}
           title={concepts[2].title}
