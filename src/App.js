@@ -1,5 +1,5 @@
 import "./App.css";
-import Expenses from "./components/Expenses/Expenses";
+import Expense from "./components/Expenses/Expense";
 import Todos from "./components/todos/todos";
 import { expenses } from "./data/data";
 
@@ -15,7 +15,7 @@ import { expenses } from "./data/data";
 function App() {
   return (
     <div className="App">
-      <Expenses items={expenses} />
+      <Expense />
       {/* <Todos /> */}
 
       {/* <PackingList />
