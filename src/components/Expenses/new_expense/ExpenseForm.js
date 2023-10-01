@@ -22,13 +22,13 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
   //     //   return { ...prevState, title: e.target.value };
   //     // });
   //   };
-  //   const amountChangeHandler = (e) => {
-  //     setAmount(e.target.value);
-  //     // setUserInput({
-  //     //   ...userInput,
-  //     //   amount: e.target.value,
-  //     // });
-  //   };
+  // const amountChangeHandler = (e) => {
+  //   setAmount(e.target.value);
+  //   // setUserInput({
+  //   //   ...userInput,
+  //   //   amount: e.target.value,
+  //   // });
+  // };
   const dateChangeHandler = (e) => {
     setDate(e.target.value);
     // setUserInput({
@@ -51,7 +51,7 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
     e.preventDefault();
     const expenseData = {
       title: title,
-      amaount: amount,
+      amount: amount,
       date: new Date(date),
     };
     // console.log(expenseData);
