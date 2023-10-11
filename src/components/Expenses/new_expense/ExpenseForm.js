@@ -54,7 +54,7 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
       amount: amount,
       date: new Date(date),
     };
-    // console.log(expenseData);
+    // console.log(expenseData); communicating with the parent, sending data to the parent
     onSaveExpenseData(expenseData);
     setTitle("");
     setAmount("");

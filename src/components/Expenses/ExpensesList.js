@@ -1,22 +1,21 @@
 import React from "react";
 import ExpenseItem from "./ExpenseItem";
-
-const ExpensesList = (filteredExpenses) => {
+import "./ExpensesList.css";
+const ExpensesList = ({ filteredExpenses }) => {
+  if (filteredExpenses.length === 0) {
+    return <h2 className=" expense-list__fallback">No expense found</h2>;
+  }
   return (
-    <div>
-      {filteredExpenses.length === 0 ? (
-        <p>No expense found</p>
-      ) : (
-        filteredExpenses.map((item) => (
-          <ExpenseItem
-            key={item.id}
-            title={item.title}
-            amount={item.amount}
-            date={item.date}
-          />
-        ))
-      )}
-    </div>
+    <ul className="expenses-list">
+      {filteredExpenses.map((item) => (
+        <ExpenseItem
+          key={item.id}
+          title={item.title}
+          amount={item.amount}
+          date={item.date}
+        />
+      ))}
+    </ul>
   );
 };
 
