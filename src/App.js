@@ -1,5 +1,6 @@
 import "./App.css";
 import Expense from "./components/Expenses/Expense";
+import Course from "./components/third_project/Course";
 import Todos from "./components/todos/todos";
 import { expenses } from "./data/data";
 
@@ -15,8 +16,10 @@ import { expenses } from "./data/data";
 function App() {
   return (
     <div className="App">
-      <Expense />
+      {/* <Expense /> */}
       {/* <Todos /> */}
+
+      <Course />
 
       {/* <PackingList />
       <hr />
